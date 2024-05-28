@@ -8,7 +8,7 @@ const vue = new Vue({
 
 let showNoToken = true;
 const service = axios.create({
-  // baseURL: 'http://py.ruanlan.top', // api 的 base_url,固定值
+  baseURL: 'https://py.ruanlan.top', // api 的 base_url,固定值
   timeout: 30000 // request timeout
 });
 // request interceptor

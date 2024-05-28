@@ -41,7 +41,7 @@
 
       <div style="margin: 16px;">
         <van-button round block type="info" native-type="submit">登录</van-button>
-        <p class="tips">未注册手机号自动注册登录</p>
+        <p class="tips">未注册手机号登录</p>
       </div>
     </van-form>
   </div>
