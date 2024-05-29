@@ -41,7 +41,6 @@
 
       <div style="margin: 16px;">
         <van-button round block type="info" native-type="submit">登录</van-button>
-        <p class="tips">未注册手机号登录</p>
       </div>
     </van-form>
   </div>
@@ -87,7 +86,7 @@ export default {
         device_id: '123456',
       }).then(() => {
         if (this.isCountDownStart) return;
-        //联调接口 todo
+        //联调接口
         this.isCountDownStart = true;
         this.countDown = 60;
         let countDownId = setInterval(() => {
@@ -99,7 +98,6 @@ export default {
           }
           this.countDown -= 1;
         }, 1000);
-        //调式 todo
       });
 
     },
@@ -166,6 +164,13 @@ export default {
   .login-outer {
     width: 460px;
     margin: 0 auto;
+    .code-outer {
+      .btn-send-code {
+        position: static;
+        margin-top: 10px;
+      }
+    }
+
   }
 }
 </style>

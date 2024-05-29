@@ -13,7 +13,7 @@ export function queryUserList(data){
     });
 }
 
-// 发送验证码 todo
+// 发送验证码
 export function getSendCode(data) {
 	return request({
 		url: '/api/code/sms',
@@ -21,7 +21,7 @@ export function getSendCode(data) {
 		data,
 	});
 }
-// 登录和注册 todo
+// 登录和注册
 export function LoginPost(data) {
     return request({
         url: '/api/login/codeLogin',

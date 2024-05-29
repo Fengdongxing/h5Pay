@@ -21,7 +21,7 @@ service.interceptors.request.use(
     };
 
     let tokenX = localStorage.getItem('token');
-    //调整 todo
+    //调整
     if(tokenX){
       config.headers['token'] = tokenX
     }
